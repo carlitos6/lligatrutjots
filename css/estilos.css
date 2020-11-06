@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@300;400;700&display=swap');
 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +21,6 @@
 body{
     font-family: 'Turret Road', cursive;
 }
-
 nav{
     height: 100px;
     background: black;
@@ -105,7 +106,8 @@ label #sign-two {
     padding-bottom: 30px;
     font-size: 40px;
     text-align:center;
-    
+    color: white;
+    background: #202020;
 }
 
 .subtitle2 {
@@ -113,21 +115,25 @@ label #sign-two {
     padding-bottom: 30px;
     font-size: 40px;
     text-align:center;
-    
+    color: white;
+    background: #202020;
 }
 
 .subtitle3 {
-    padding-top: 70px;
+    padding-top: 130px;
     padding-bottom: 30px;
     font-size: 40px;
     text-align:center;
+    color: white;
+    background: #202020;
 }
+
 
 .contenedor-cartas{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    
+    background: #202020;
     
 }
 
@@ -139,7 +145,7 @@ label #sign-two {
     border-radius: 20px 20px 10px 10px;
     position: relative;
     text-align: right;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
    
     
 }
@@ -148,7 +154,7 @@ label #sign-two {
     width: 80%;
     padding-right: 70px;
     padding-top: 10px;
-    margin-left: 80px;
+    margin-left: 70px;
     display: block;
     
     
@@ -158,7 +164,7 @@ label #sign-two {
     padding-bottom: 0;
     width: 100%;
     margin: auto;
-    
+    background: #202020;
 }
 
 #imgMostrar{
@@ -177,12 +183,13 @@ label #sign-two {
 .miniatura{
     width: 60px;
     height: 60px;
-    border:1px solid #F2F2F2;
+    border:1px solid #960c0a;
     border-radius: 10px;
     float: left;
     cursor: pointer;
     padding: 5px;
     margin: 10px 5px;
+    background: #F2F2F2;
 }
 
 .responsive2{
@@ -205,7 +212,9 @@ label #sign-two {
     margin: auto;
 }
 
-
+.contenedor-clasificacion{
+    background: #202020;;
+}
 .titulo_clasificacion{
     font-size: 24px;
     width: 100%;
@@ -213,18 +222,51 @@ label #sign-two {
     padding-left: 70px;
     padding-top: 20px;
 }
-
-
-.footer{
-    background: #fafafa;
+.barramenu{
+width: 80%;
+margin: auto;
 }
 
+#selectmenu{
+    background:#960c0a; 
+    border: 1px solid black;
+    color: white;
+    font: inherit;
+}
+
+.clasigrande{
+    padding-top: 50px;
+    padding-bottom: 130px;
+}
+#myimage{
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.footer{
+    background: white;
+}
+
+.linea{
+    display: block;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.hr{
+    border-color:black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
 .contenedor-footer{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-top: 250px;
+    padding-top: 20px;
 }
 
 .titulo-footer{
@@ -285,6 +327,7 @@ label #sign-two {
 .contact__title{
     font-size: 16px;
     line-height: 20px;
+    color: white;
 }
 
 .contact_title--black{

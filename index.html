@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="fonts.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="img/LOGO FAVICON LIGA TRUTJOTS.png" type="image/x-icon">
+    <link rel="icon" href="img/LOGO FAVICON LIGA TRUTJOTS .png" type="image/png" sizes="32x32">
+    <link rel="icon" href="img/LOGO FAVICON LIGA TRUTJOTS 96x96.png" type="image/png" sizes="96x96">
+    <link rel="icon" href="img/LOGO FAVICON LIGA TRUTJOTS 192x192.png" type="image/png" sizes="192x192">
+   
 </head>
 <body>
+
     <div class="globalcontenedor">
     <header id="header">
         <nav>
@@ -41,10 +45,11 @@
 
     
     <main>
-           <section class="equipos">
             <div class="contenedor">
-                <a name="equipos"><h2 class="subtitle1"><span class="icon-users"></span> EQUIPOS</h2></a>
-
+                    <a name="equipos"><h2 class="subtitle1"><span class="icon-users"></span> EQUIPOS</h2></a> 
+                
+                   
+        
                 <article class="contenedor-cartas">
                     <div class="carta">
                         <img src="img/CARTA CATA-CARLOS.jpg" class="carta-img">
@@ -70,10 +75,9 @@
                         <img src="img/CARTA CLARA-ANGEL.jpg" class="carta-img">
                     </div>
 
-                </article>
-
+                </article> 
             </div>
-        </section>
+           
 
         <section class="jornadas">
             <div class="contenedor-jornadas">
@@ -98,26 +102,55 @@
         <section class="clasificacion">
             <div class="contenedor-clasificacion">
                 <a name="clasificacion"></a><h2 class="subtitle3"><span class="icon-list-numbered"></span> CLASIFICACIÓN</h2></a>
-                <div class="clasi"></div>
-                <img src="img/CLASIFICACION 0.jpg"class="responsive2">
+               
+               
+                <div class="clasi">
+                    <script type language="javascript">
+                        function cargar_imagen(imagen) {
+                        var img = document.getElementById("myimage");
+                        var img_dir = "img/";
+                        if (img) {
+                        img.src = img_dir + imagen;
+                        }
+                        }
+                    </script>
+                    <div class="barramenu">
+                        <select id="selectmenu"name="imagenes" onchange="cargar_imagen(this.value)">
+                            <option value="Elige jornada" selected disabled>Elige jornada</option>
+                            <option value="CLASIFICACION 0.jpg">Jornada 1</option>
+                            <!--<option value="2.png">Jornada 2</option>
+                            <option value="3.png">jornada 3</option>
+                            <option value="4.png">Jornada 4</option>
+                            <option value="4.png">Jornada 5</option> -->
+                        </select>
+                    </div> 
+                        <div class="clasigrande">
+                            <img alt src="img/CLASIFICACION 0.jpg" id="myimage">
+                        </div>
+                        
+                    <!--<img src="img/CLASIFICACION 0.jpg"class="responsive2"> -->
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-
+        <div linea >
+            <div class="hr"></div> 
+            
+        </div>
         <div class="contenedor-footer">
             <section class="patrocinadores-oficiales">
                 <h3 class="titulo-footer">Patrocinadores Oficiales</h3>
                 <div class="patrocinador">
                     <div class="patrocinador-logo">
-                     <img src="img/LOGO SPORTMATCH.png" class="responsive3">  
+                     <a href="https://sportmatch.es/"><img src="img/LOGO SPORTMATCH.png" class="responsive3"></a>  
                     </div>
                     <div class="patrocinador-logo">
-                        <img src="img/OPEN.png" class="responsive3">  
+                       <a href="http://www.openmarratxi.org/"><img src="img/OPEN.png" class="responsive3"></a>  
                      </div>
                     <div class="patrocinador-logo">
                         <div class="canhomar">
-                        <img src="img/LOGO CAN HOMAR.png"  class="responsive3">  
+                        <a href="https://www.google.es/maps/place/Estanco+Palma+05/@39.5714281,2.6515462,17z/data=!3m1!4b1!4m5!3m4!1s0x129792522066b205:0x18752ce5b9b5411f!8m2!3d39.571424!4d2.6537349"><img src="img/LOGO CAN HOMAR.png"  class="responsive3"></a>  
                     </div>
                     </div>
                 </div>
@@ -135,7 +168,7 @@
             </div>
             <div class="item__contact">
                 <i class='bx bxs-edit-location contact__icon' ></i>
-                <h3 class="contact__title">Carrer de la Verónica</h3>
+                <a href="https://www.google.es/maps/place/Open+Marratx%C3%AD+Padel+i+Tenis/@39.6189883,2.7386686,17z/data=!3m1!4b1!4m5!3m4!1s0x1297952b285e0dbd:0x615ff0f8e71eb047!8m2!3d39.6189842!4d2.7408573" style="text-decoration:none"><h3 class="contact__title">Carrer de la Verónica</h3></a>
             </div>
             <div class="item__contact item__contact--gold">
                 <i class='bx bxs-chat contact__icon contact__icon--modifier' ></i>
