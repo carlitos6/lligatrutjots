@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@300;400;700&display=swap');
 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +21,6 @@
 body{
     font-family: 'Turret Road', cursive;
 }
-
 nav{
     height: 100px;
     background: black;
@@ -105,7 +106,8 @@ label #sign-two {
     padding-bottom: 30px;
     font-size: 40px;
     text-align:center;
-    
+    color: white;
+    background: #202020;
 }
 
 .subtitle2 {
@@ -113,21 +115,126 @@ label #sign-two {
     padding-bottom: 30px;
     font-size: 40px;
     text-align:center;
-    
+    color: white;
+    background: #202020;
 }
 
 .subtitle3 {
-    padding-top: 70px;
+    padding-top: 130px;
     padding-bottom: 30px;
     font-size: 40px;
     text-align:center;
+    color: white;
+    background: #202020;
+}
+.contenedor{
+    background: #202020;
+}
+.mySlides {
+    display: none
+    
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  width: 80%;
+  
 }
 
+.mySlides img{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(150, 12, 9, 0.932);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #960c0a;;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: white;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/*
 .contenedor-cartas{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    
+    background: #202020;
     
 }
 
@@ -139,7 +246,7 @@ label #sign-two {
     border-radius: 20px 20px 10px 10px;
     position: relative;
     text-align: right;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
    
     
 }
@@ -148,17 +255,18 @@ label #sign-two {
     width: 80%;
     padding-right: 70px;
     padding-top: 10px;
-    margin-left: 80px;
+    margin-left: 70px;
     display: block;
     
     
 }
+*/
 
 #galeria{
     padding-bottom: 0;
     width: 100%;
     margin: auto;
-    
+    background: #202020;
 }
 
 #imgMostrar{
@@ -177,12 +285,30 @@ label #sign-two {
 .miniatura{
     width: 60px;
     height: 60px;
-    border:1px solid #F2F2F2;
+    border:1px solid #960c0a;
     border-radius: 10px;
     float: left;
     cursor: pointer;
     padding: 5px;
     margin: 10px 5px;
+    background: #F2F2F2;
+}
+
+#textomini{
+    display: table;
+    margin: 0 auto;
+}
+
+.textito{
+    width: 60px;
+    height: 60px;
+    float: left;
+    cursor: pointer;
+    padding: 2px;
+    margin: 10px 5px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
 }
 
 .responsive2{
@@ -205,7 +331,9 @@ label #sign-two {
     margin: auto;
 }
 
-
+.contenedor-clasificacion{
+    background: #202020;;
+}
 .titulo_clasificacion{
     font-size: 24px;
     width: 100%;
@@ -213,18 +341,146 @@ label #sign-two {
     padding-left: 70px;
     padding-top: 20px;
 }
-
-
-.footer{
-    background: #fafafa;
+.barramenu{
+width: 80%;
+margin: auto;
 }
 
+#selectmenu{
+    background:#960c0a; 
+    border: 1px solid black;
+    color: white;
+    font: inherit;
+}
+
+.clasigrande{
+    padding-top: 50px;
+    padding-bottom: 130px;
+}
+#myimage{
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.contenedor-fotogaleria{
+    background:#202020 ;
+    padding-bottom: 50px;
+}
+
+.fotos{
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background:#960c0a; 
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+}
+.fotos li{
+    margin: 5px;
+}
+
+.fotos img {
+    width: 150px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.modal{ 
+    display: none;
+}
+
+.modal:target{
+    display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal h3{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.fotaza{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotaza a{
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin:0 10px;
+}
+
+.fotaza a:nth-child(2){
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.fotaza img{
+    width: 500px;
+    height: auto;
+    max-width: 100%;
+    border: 7px solid #fff;
+    box-sizing: border-box;
+}
+
+.cerrar{
+    display: block;
+    background: white;
+    width: 25px;
+    height: 25px;
+    margin:auto;
+    text-align: 15px center;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    padding: 4px;
+    padding-top: 1px;
+    border-radius: 50%;
+    line-height: 25px;
+
+}
+
+.footer{
+    background: white;
+}
+
+.linea{
+    display: block;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.hr{
+    border-color:black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
 .contenedor-footer{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-top: 250px;
+    padding-top: 20px;
 }
 
 .titulo-footer{
@@ -285,6 +541,7 @@ label #sign-two {
 .contact__title{
     font-size: 16px;
     line-height: 20px;
+    color: white;
 }
 
 .contact_title--black{
@@ -358,6 +615,30 @@ label #sign-two {
         height: 100vh;
         
     }
+    .fotaza img{
+        width: 300px;
+        height: auto;
+        max-width: 100%;
+        border: 7px solid #fff;
+        box-sizing: border-box;
+    }
+    .modal:target{
+        display: block;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.8);
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+.modal h3{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+}
+
 }
 
 @media (max-height: 400px){
@@ -369,6 +650,7 @@ label #sign-two {
        margin: auto;
        padding-top: 50px;
     }    
+   
 
 }
 
