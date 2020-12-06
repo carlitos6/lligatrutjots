@@ -2,14 +2,21 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LLIGA TRUTJOTS 20-21</title>
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="fonts2.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="img/LOGO FAVICON LIGA TRUTJOTS.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/LOGO FAVICON LIGA TRUTJOTS .png" type="image/png" sizes="32x32">
+    <link rel="icon" href="img/LOGO FAVICON LIGA TRUTJOTS 96x96.png" type="image/png" sizes="96x96">
+    <link rel="icon" href="img/LOGO FAVICON LIGA TRUTJOTS 192x192 .png" type="image/png" sizes="192x192">
+    <link rel="icon" href="img/LOGO FAVICON LIGA TRUTJOTS 200x200 .png" type="image/png" sizes="200x200">
+    <link rel="apple-touch-icon-precomposed" href="img/LOGO FAVICON LIGA TRUTJOTS 180x180 .png" type="image/png" sizes="192x192">
+   
+   
 </head>
 <body>
+
     <div class="globalcontenedor">
     <header id="header">
         <nav>
@@ -20,10 +27,11 @@
             </label>
             <a href="index.html"><img src="img/CABECERA.png" alt=""></a>
             <ul>
-                <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
-                <li><a href="#equipos"><span class="icon-users"></span>Equipos</a></li>
-                <li><a href="#jornadas"><span class="icon-stats-dots"></span>Jornadas</a></li>
-                <li><a href="#clasificacion"><span class="icon-list-numbered"></span>Clasificación</a></li>
+                <li><a href="index.html"><span class="icon-home"></span> Inicio</a></li>
+                <li><a href="#equipos"><span class="icon-users"></span> Equipos</a></li>
+                <li><a href="#jornadas"><span class="icon-stats-dots"></span> Jornadas</a></li>
+                <li><a href="#clasificacion"><span class="icon-list-numbered"></span> Clasificación</a></li>
+                <li><a href="#multimedia"><span class="icon-images"></span> Multimedia</a></li>
                 
             
         </ul>
@@ -41,11 +49,67 @@
 
     
     <main>
-           <section class="equipos">
             <div class="contenedor">
-                <a name="equipos"><h2 class="subtitle1"><span class="icon-users"></span> EQUIPOS</h2></a>
+                    <a name="equipos"><h2 class="subtitle1"><span class="icon-users"></span> EQUIPOS</h2></a> 
+                
+                    <div class="slideshow-container">
 
-                <article class="contenedor-cartas">
+                        <div class="mySlides fade">
+                          
+                          <img src="img/CARTA CATA-CARLOS.jpg" style="width:80%">
+                          
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          
+                          <img src="img/CARTA MERY-XESC.jpg" style="width:80%">
+                          
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          
+                          <img src="img/CARTA DUNY-HENRY.jpg" style="width:80%">
+                          
+                        </div>
+
+                        <div class="mySlides fade">
+                            
+                            <img src="img/CARTA BARBARA-MIKI.jpg" style="width:80%">
+                            
+                          </div>
+
+                          <div class="mySlides fade">
+                        
+                            <img src="img/CARTA MARIAN-PEDRO.jpg" style="width:80%">
+                            
+                          </div>
+
+                          <div class="mySlides fade">
+                            
+                            <img src="img/CARTA CLARA-ANGEL.jpg" style="width:80%">
+                            
+                          </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                        </div>
+                        <br>
+                        
+                        <div style="text-align:center">
+                          <span class="dot" onclick="currentSlide(1)"></span> 
+                          <span class="dot" onclick="currentSlide(2)"></span> 
+                          <span class="dot" onclick="currentSlide(3)"></span> 
+                          <span class="dot" onclick="currentSlide(4)"></span> 
+                          <span class="dot" onclick="currentSlide(5)"></span> 
+                          <span class="dot" onclick="currentSlide(6)"></span> 
+                        </div>
+                        
+                        
+                        
+                
+        
+              <!-- <article class="contenedor-cartas">
                     <div class="carta">
                         <img src="img/CARTA CATA-CARLOS.jpg" class="carta-img">
                     </div>
@@ -70,10 +134,36 @@
                         <img src="img/CARTA CLARA-ANGEL.jpg" class="carta-img">
                     </div>
 
-                </article>
-
+                </article> -->
             </div>
-        </section>
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
 
         <section class="jornadas">
             <div class="contenedor-jornadas">
@@ -81,7 +171,7 @@
 
                 <div id="galeria">
                     <div id="galeria_base">
-                        <img src="img/CARTEL LIGA TRUTJOTS JORNADA1.jpg" id="imgMostrar">
+                        <img src="img/CARTEL LIGA TRUTJOTS JORNADA3.jpg" id="imgMostrar">
                     </div>
             
                     <div id="galeria_miniaturas">
@@ -91,33 +181,179 @@
                         <img class="miniatura" src="img/CARTEL LIGA TRUTJOTS JORNADA4.jpg" onclick="document.getElementById('imgMostrar').src='img/CARTEL LIGA TRUTJOTS JORNADA4.jpg';">
                         <img class="miniatura" src="img/CARTEL LIGA TRUTJOTS JORNADA5.jpg" onclick="document.getElementById('imgMostrar').src='img/CARTEL LIGA TRUTJOTS JORNADA5.jpg';">
                     </div>
-                
+                    <div id="textomini">
+                        <h5 class="textito">JORNADA 1</h5>
+                        <h5 class="textito">JORNADA 2</h5>
+                        <h5 class="textito">JORNADA 3</h5>
+                        <h5 class="textito">JORNADA 4</h5>
+                        <h5 class="textito">JORNADA 5</h5>
+                    </div>
+                    
                 </div>
         </section>
-
+    
         <section class="clasificacion">
             <div class="contenedor-clasificacion">
                 <a name="clasificacion"></a><h2 class="subtitle3"><span class="icon-list-numbered"></span> CLASIFICACIÓN</h2></a>
-                <div class="clasi"></div>
-                <img src="img/CLASIFICACION 0.jpg"class="responsive2">
+               
+               
+                <div class="clasi">
+                    <script type language="javascript">
+                        function cargar_imagen(imagen) {
+                        var img = document.getElementById("myimage");
+                        var img_dir = "img/";
+                        if (img) {
+                        img.src = img_dir + imagen;
+                        }
+                        }
+                    </script>
+                    <div class="barramenu">
+                        <select id="selectmenu"name="imagenes" onchange="cargar_imagen(this.value)">
+                            <option value="Elige jornada" selected disabled>Elige jornada</option>
+                            <option value="CLASIFICACION1.jpg">Jornada 1</option>
+                            <option value="CLASIFICACION2.jpg">Jornada 2</option>
+                            <option value="CLASIFICACION3.jpg">Jornada 3</option>
+                            <option value="CLASIFICACION4.jpg">Jornada 4</option>
+                            <!--<option value="4.png">Jornada 5</option> -->
+                        </select>
+                    </div> 
+                        <div class="clasigrande">
+                            <img  alt src="img/CLASIFICACION4.jpg" id="myimage">
+                        </div>
+                        
+                </div>
             </div>
         </section>
+
+        <section class="fotogaleria">
+            <div class="contenedor-fotogaleria">
+                <a name="multimedia"></a><h2 class="subtitle2"><span class="icon-images"></span> MULTIMEDIA</h2></a>
+                    <ul class="fotos">
+                        <li><a href="#img1"><img src="img/FOTOS/IMG-20201106-WA0037.jpg"></a></li>
+                        <li><a href="#img2"><img src="img/FOTOS/IMG-20201106-WA0038.jpg"></a></li>
+                        <li><a href="#img3"><img src="img/FOTOS/IMG-20201106-WA0040.jpg"></a></li>
+                        <li><a href="#img4"><img src="img/FOTOS/IMG-20201106-WA0041.jpg"></a></li>
+                        <li><a href="#img5"><img src="img/FOTOS/IMG-20201106-WA0042.jpg"></a></li>
+                        <li><a href="#img6"><img src="img/FOTOS/IMG-20201106-WA0043.jpg"></a></li>
+                        <li><a href="#img7"><img src="img/FOTOS/IMG-20201106-WA0044.jpg"></a></li>
+                        <li><a href="#img8"><img src="img/FOTOS/IMG-20201106-WA0045.jpg"></a></li>
+                        <li><a href="#img9"><img src="img/FOTOS/IMG-20201106-WA0046.jpg"></a></li>
+                        <li><a href="#img10"><img src="img/FOTOS/IMG-20201126-WA0033.jpg"></a></li>
+                    </ul>
+
+                    <div class="modal" id="img1">
+                        <h3>FOTO 1</h3>
+                        <div class="fotaza">
+                            <a href="#img10">&#60;</a>
+                            <a href="#img2"><img src="img/FOTOS/IMG-20201106-WA0037.jpg"></a>
+                            <a href="#img2">></a>
+                        </div>
+                        <a class="cerrar"href="#fotos">X</a>
+                    </div>
+                    <div class="modal" id="img2">
+                        <h3>FOTO 2</h3>
+                        <div class="fotaza">
+                            <a href="#img1">&#60;</a>
+                            <a href="#img3"><img src="img/FOTOS/IMG-20201106-WA0038.jpg"></a>
+                            <a href="#img3">></a>
+                        </div>
+                        <a class="cerrar"href="#fotos">X</a>
+                    </div>
+                    <div class="modal" id="img3">
+                        <h3>FOTO 3</h3>
+                        <div class="fotaza">
+                            <a href="#img2">&#60;</a>
+                            <a href="#img4"><img src="img/FOTOS/IMG-20201106-WA0040.jpg"></a>
+                            <a href="#img4">></a>
+                        </div>
+                        <a class="cerrar"href="#fotos">X</a>
+                    </div>
+                    <div class="modal" id="img4">
+                        <h3>FOTO 4</h3>
+                        <div class="fotaza">
+                            <a href="#img3">&#60;</a>
+                            <a href="#img5"><img src="img/FOTOS/IMG-20201106-WA0041.jpg"></a>
+                            <a href="#img5">></a>
+                        </div>
+                        <a class="cerrar"href="#fotos">X</a>
+                    </div>
+                    <div class="modal" id="img5">
+                        <h3>FOTO 5</h3>
+                        <div class="fotaza">
+                            <a href="#img4">&#60;</a>
+                            <a href="#img6"><img src="img/FOTOS/IMG-20201106-WA0042.jpg"></a>
+                            <a href="#img6">></a>
+                        </div>
+                        <a class="cerrar"href="#fotos">X</a>
+                    </div>
+                    <div class="modal" id="img6">
+                        <h3>FOTO 6</h3>
+                        <div class="fotaza">
+                            <a href="#img5">&#60;</a>
+                            <a href="#img7"><img src="img/FOTOS/IMG-20201106-WA0043.jpg"></a>
+                            <a href="#img7">></a>
+                        </div>
+                        <a class="cerrar"href="#fotos">X</a>
+                    </div>
+                    <div class="modal" id="img7">
+                        <h3>FOTO 7</h3>
+                        <div class="fotaza">
+                            <a href="#img6">&#60;</a>
+                            <a href="#img8"><img src="img/FOTOS/IMG-20201106-WA0044.jpg"></a>
+                            <a href="#img8">></a>
+                        </div>
+                        <a class="cerrar"href="#fotos">X</a>
+                    </div>
+                    <div class="modal" id="img8">
+                        <h3>FOTO 8</h3>
+                        <div class="fotaza">
+                            <a href="#img7">&#60;</a>
+                            <a href="#img9"><img src="img/FOTOS/IMG-20201106-WA0045.jpg"></a>
+                            <a href="#img9">></a>
+                        </div>
+                        <a class="cerrar"href="#fotos">X</a>
+                    </div>
+                    <div class="modal" id="img9">
+                        <h3>FOTO 9</h3>
+                        <div class="fotaza">
+                            <a href="#img8">&#60;</a>
+                            <a href="#img10"><img src="img/FOTOS/IMG-20201106-WA0046.jpg"></a>
+                            <a href="#img10">></a>
+                        </div>
+                        <a class="cerrar"href="#fotos">X</a>
+                    </div>
+                    <div class="modal" id="img10">
+                        <h3>FOTO 10</h3>
+                        <div class="fotaza">
+                            <a href="#img9">&#60;</a>
+                            <a href="#img1"><img src="img/FOTOS/IMG-20201126-WA0033.jpg"></a>
+                            <a href="#img1">></a>
+                        </div>
+                        <a class="cerrar"href="#fotos">X</a>
+                    </div>
+        </section>
+        <div class="youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xx4-nQTwdGk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </main>
     <footer class="footer">
-
+        <div linea >
+            <div class="hr"></div> 
+            
+        </div>
         <div class="contenedor-footer">
             <section class="patrocinadores-oficiales">
                 <h3 class="titulo-footer">Patrocinadores Oficiales</h3>
                 <div class="patrocinador">
                     <div class="patrocinador-logo">
-                     <img src="img/LOGO SPORTMATCH.png" class="responsive3">  
+                     <a href="https://sportmatch.es/"><img src="img/LOGO SPORTMATCH.png" class="responsive3"></a>  
                     </div>
                     <div class="patrocinador-logo">
-                        <img src="img/OPEN.png" class="responsive3">  
+                       <a href="http://www.openmarratxi.org/"><img src="img/OPEN.png" class="responsive3"></a>  
                      </div>
                     <div class="patrocinador-logo">
                         <div class="canhomar">
-                        <img src="img/LOGO CAN HOMAR.png"  class="responsive3">  
+                        <a href="https://www.google.es/maps/place/Estanco+Palma+05/@39.5714281,2.6515462,17z/data=!3m1!4b1!4m5!3m4!1s0x129792522066b205:0x18752ce5b9b5411f!8m2!3d39.571424!4d2.6537349"><img src="img/LOGO CAN HOMAR.png"  class="responsive3"></a>  
                     </div>
                     </div>
                 </div>
@@ -135,7 +371,7 @@
             </div>
             <div class="item__contact">
                 <i class='bx bxs-edit-location contact__icon' ></i>
-                <h3 class="contact__title">Carrer de la Verónica</h3>
+                <a href="https://www.google.es/maps/place/Open+Marratx%C3%AD+Padel+i+Tenis/@39.6189883,2.7386686,17z/data=!3m1!4b1!4m5!3m4!1s0x1297952b285e0dbd:0x615ff0f8e71eb047!8m2!3d39.6189842!4d2.7408573" style="text-decoration:none"><h3 class="contact__title">Carrer de la Verónica</h3></a>
             </div>
             <div class="item__contact item__contact--gold">
                 <i class='bx bxs-chat contact__icon contact__icon--modifier' ></i>
